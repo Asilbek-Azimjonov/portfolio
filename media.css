@@ -1,0 +1,81 @@
+@media (max-width: 768px) {
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.text {
+  margin-top: 5rem;
+  background-image: linear-gradient(to right top, #d6d6d6, #9eb708);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.projects {
+  padding-top: 6rem;
+}
+
+button {
+  display: none;
+}
+
+/* Contact section styling */
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  color: white;
+}
+
+.footer i {
+  margin-right: 0.5rem;
+}
+
+.contact-div {
+  margin-right: 4rem;
+}
+
+.list-none {
+  text-decoration: none;
+  list-style: none;
+}
+
+div a img {
+  width: 22rem;
+}
+
+h3 {
+  padding-bottom: 4rem;
+}
+
+@media (max-width: 590px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .links {
+    display: none;
+  }
+  .links.active::after {
+    width: 3.8rem;
+    position: absolute;
+    left: 8.5px;
+  }
+}
+
+@media (max-width: 490px) {
+  .header a:nth-child(4) {
+    font-size: 1rem;
+    margin-right: 5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  nav {
+    display: none;
+  }
+}

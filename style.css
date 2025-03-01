@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: auto;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Lora", sans-serif;
+  font-weight: 560;
+  position: relative;
+  color: #c9a227;
+  background: linear-gradient(140deg, #25395e, #8c879d);
+  background-attachment: fixed;
+}
+
+.before-name {
+  font-size: 1.7rem;
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 4rem;
+}
+
+.project {
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  background: linear-gradient(139deg, blue, black);
+  color: #ececec;
+  padding-bottom: 8px;
+}
+
+.project {
+  font-size: 1.4rem;
+}
+
+.languages {
+  font-size: 1.4rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+  background-color: #36496a;
+  z-index: 111;
+}
+
+.logo {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.telegram {
+  font-size: 0.75rem;
+}
+
+.my-name {
+  margin-left: 4rem;
+  color: #fad643;
+  cursor: pointer;
+}
+
+.intro-page {
+  width: 100%;
+}
+.text {
+  margin-left: 8rem;
+  width: auto;
+}
+
+.links {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #fad643;
+  font-size: 1.2rem;
+  transition: all ease 0.3s;
+}
+
+.links:hover {
+  color: #cb9144;
+}
+
+.links.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 5rem;
+  height: 3px;
+  background-color: #ffc971;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer i:hover {
+  cursor: pointer;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  place-items: center;
+  transition: grid-template-columns 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .project-container {
+    grid-template-columns: 1fr;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  header nav {
+    display: none;
+  }
+  .intro-page {
+    margin-top: 1rem;
+  }
+}
+
+.text {
+  background-image: linear-gradient(to right top, #d6d6d6, #9eb708);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-left: 2rem;
+}
+
+.projects {
+  padding-top: 6rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  background: #25395e;
+  color: white;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 380px) {
+  nav {
+    display: none;
+  }
+}
