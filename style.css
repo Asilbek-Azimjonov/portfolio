@@ -10,16 +10,16 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  overflow-x: auto;
+  width: 100%;
 }
 
 body {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   font-family: "Lora", sans-serif;
   font-weight: 560;
   position: relative;
   color: #c9a227;
-  background: linear-gradient(140deg, #25395e, #8c879d);
+  background: linear-gradient(140deg, #2c2c3f, #002855);
   background-attachment: fixed;
 }
 
@@ -29,20 +29,18 @@ body {
 
 .main-content {
   flex: 1;
-  overflow-y: auto;
   margin-bottom: 4rem;
+  width: 100%;
 }
 
 .project {
-  padding: 5px;
+  padding: 2px;
   border-radius: 5px;
   text-align: center;
   background: linear-gradient(139deg, blue, black);
   color: #ececec;
   padding-bottom: 8px;
-}
-
-.project {
+  max-width: 100%;
   font-size: 1.4rem;
 }
 
@@ -55,10 +53,13 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   width: 100%;
-  background-color: #36496a;
+  background-color: #070a2f;
   z-index: 111;
+
+  height: 4rem;
 }
 
 .logo {
@@ -72,18 +73,15 @@ body {
   font-size: 0.75rem;
 }
 
-.my-name {
-  margin-left: 4rem;
-  color: #fad643;
-  cursor: pointer;
-}
-
 .intro-page {
   width: 100%;
 }
 .text {
-  margin-left: 8rem;
+  margin-left: 2rem;
   width: auto;
+  background-image: linear-gradient(to right top, #d6d6d6, #9eb708);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .links {
@@ -125,27 +123,6 @@ footer i:hover {
   transition: grid-template-columns 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  .project-container {
-    grid-template-columns: 1fr;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-  header nav {
-    display: none;
-  }
-  .intro-page {
-    margin-top: 1rem;
-  }
-}
-
-.text {
-  background-image: linear-gradient(to right top, #d6d6d6, #9eb708);
-  -webkit-background-clip: text;
-  color: transparent;
-  margin-left: 2rem;
-}
-
 .projects {
   padding-top: 6rem;
 }
@@ -154,16 +131,22 @@ footer i:hover {
   display: flex;
   justify-content: center;
   padding: 0.5rem;
-  background: #25395e;
+  background: #070a2f;
   color: white;
   margin-bottom: 0;
   padding-bottom: 0;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
+  .main-content {
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
+  }
   .footer {
     padding: 0.5rem;
     font-size: 0.8rem;
+    width: 100%;
   }
 }
 
