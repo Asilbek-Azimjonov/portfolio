@@ -11,6 +11,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -19,7 +20,7 @@ body {
   font-weight: 560;
   position: relative;
   color: #c9a227;
-  background: linear-gradient(140deg, #2c2c3f, #002855);
+  background: linear-gradient(60deg, #22229d, #5a646f);
   background-attachment: fixed;
 }
 
@@ -34,10 +35,10 @@ body {
 }
 
 .project {
-  padding: 2px;
-  border-radius: 5px;
+  /* padding: 2px; */
+  border-radius: 6px;
   text-align: center;
-  background: linear-gradient(139deg, blue, black);
+  background: linear-gradient(100deg, rgb(2, 130, 169), rgb(0, 64, 123));
   color: #ececec;
   padding-bottom: 8px;
   max-width: 100%;
@@ -75,10 +76,12 @@ body {
 
 .intro-page {
   width: 100%;
+  min-height: 8rem;
 }
 .text {
+  min-height: 8rem;
   margin-left: 2rem;
-  width: auto;
+  width: 100%;
   background-image: linear-gradient(to right top, #d6d6d6, #9eb708);
   -webkit-background-clip: text;
   color: transparent;
