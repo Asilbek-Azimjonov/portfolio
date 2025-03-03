@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -31,18 +31,22 @@ body {
 .main-content {
   flex: 1;
   margin-bottom: 4rem;
-  width: 100%;
+  max-width: 100%;
 }
 
 .project {
-  /* padding: 2px; */
   border-radius: 6px;
   text-align: center;
   background: linear-gradient(100deg, rgb(2, 130, 169), rgb(0, 64, 123));
   color: #ececec;
   padding-bottom: 8px;
   max-width: 100%;
+  max-width: 23rem;
   font-size: 1.4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .languages {
@@ -56,7 +60,7 @@ body {
   align-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
-  width: 100%;
+  max-width: 100%;
   background-color: #070a2f;
   z-index: 111;
 
@@ -75,12 +79,12 @@ body {
 }
 
 .intro-page {
-  width: 100%;
+  max-width: 100%;
   min-height: 8rem;
 }
 .text {
   min-height: 8rem;
-  margin-left: 2rem;
+  margin: 5rem 5rem;
   width: 100%;
   background-image: linear-gradient(to right top, #d6d6d6, #9eb708);
   -webkit-background-clip: text;
@@ -119,6 +123,7 @@ footer i:hover {
 }
 
 .project-container {
+  max-width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
@@ -128,6 +133,7 @@ footer i:hover {
 
 .projects {
   padding-top: 6rem;
+  max-width: 100%;
 }
 
 .footer {
@@ -145,6 +151,7 @@ footer i:hover {
   .main-content {
     padding-right: 0.4rem;
     padding-left: 0.4rem;
+    max-width: 100%;
   }
   .footer {
     padding: 0.5rem;
